@@ -1,0 +1,26 @@
+<style>
+ol {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.title {
+    font-size: 16;
+    color: #3cb371;
+}
+
+.body {
+    font-size: 12;
+    color: #4a4a4a;
+}
+
+</style>
+
+<ol>
+<% data.forEach(function(item) {%>
+    <li>
+        <p class="title"><%= item.title %></p>
+        <p class="body"><%= item.body %></p>
+    </li>
+<% }); %>
+</ol>
+
